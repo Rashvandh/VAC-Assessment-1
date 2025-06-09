@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VAC</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
     </nav>
     <h1>Welcome to VAC</h1>
     <form action="index.html" method="post">
@@ -27,12 +29,13 @@
         <p id="output"></p>
     </form>
     <script>
-        function showName(){
+        function showName() {
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const registernumber = document.getElementById('registernumber').value;
-            document.getElementById('output').innerHTML = `Name: ${name}, Email: ${email}, Register Number: ${registernumber}`;
+            document.getElementById('output').innerHTML = `Name: ${name},<br>Email: ${email},<br>Register Number: ${registernumber}`;
         }
     </script>
 </body>
+
 </html>
